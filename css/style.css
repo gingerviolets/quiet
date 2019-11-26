@@ -1,8 +1,11 @@
-.header {
+body {
   display: block;
   margin: auto;
   text-align: center;
-  font-family: 'Sofia';
+}
+
+.header {
+  font-family: 'Sofia', cursive;
   font-size: 1.3em;
   padding-top: 10px;
   color: #888888;
