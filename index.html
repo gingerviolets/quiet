@@ -53,11 +53,15 @@ getBtn.addEventListener("click", function () {
         getIcon.classList.remove('fa-play-circle');
         getIcon.classList.add('fa-pause-circle');
       
- music.play();
+      document.getElementById("sound").setAttribute('src', music);
+     music.load();
+     music.play();
     } else {
         getIcon.classList.remove('fa-pause-circle');
         getIcon.classList.add('fa-play-circle');
- music.pause();
+     document.getElementById("sound").setAttribute('src', music);
+     music.load();
+     music.play();
     }
 });
 
@@ -71,8 +75,8 @@ function setVolume(volume){music.volume = volume;}
       
      document.getElementById("sound").pause();
      document.getElementById("sound").setAttribute('src', music);
-     document.getElementById("sound").load();
-     document.getElementById("sound").play();
+     music.load();
+     music.play();
    }
 
     
