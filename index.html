@@ -65,18 +65,15 @@ getBtn.addEventListener("click", function () {
 function setVolume(volume){music.volume = volume;}
 
 // Change track/background
-
-document.getElementById("sound").setAttribute('src', 'AUDIO_SRC_FILE');
-
-function cs_change_music(music)
-{
-document.getElementById("sound").pause();
-document.getElementById("sound").setAttribute('src', music);
-document.getElementById("sound").load();
-document.getElementById("sound").play();
-
-}
-
+    
+   function cs_change_music(music)
+   {
+      
+     document.getElementById("sound").pause();
+     document.getElementById("sound").setAttribute('src', music);
+     document.getElementById("sound").load();
+     document.getElementById("sound").play();
+   }
 
     
     
