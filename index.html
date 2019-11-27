@@ -33,9 +33,9 @@
  <div id="volslider"><input type="range" oninput="setVolume(this.value)" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1"></div>
   
 <div class="switchicon">
-  <a href="" class="switchicon" id="rain"><i class="fas fa-cloud-showers-heavy"></i></a>
-  <a href="" class="switchicon" id="fire"><i class="fas fa-burn"></i></a>
-  <a href="" class="switchicon" id="coffee"><i class="fas fa-mug-hot"></i></a>
+  <a href="" class="switchicon" id="rain" onclick="cs_change_music('audio/raindrops.mp3')"><i class="fas fa-cloud-showers-heavy"></i></a>
+  <a href="" class="switchicon" id="fire" onclick="cs_change_music('audio/fireplace.mp3')"><i class="fas fa-burn"></i></a>
+  <a href="" class="switchicon" id="coffee" onclick="cs_change_music('audio/coffeeshop.mp3')"><i class="fas fa-mug-hot"></i></a>
     </div>
   
 
@@ -66,5 +66,19 @@ function setVolume(volume){music.volume = volume;}
 
 // Change track/background
 
+document.getElementById("sound").setAttribute('src', 'AUDIO_SRC_FILE');
+
+function cs_change_music(music)
+{
+document.getElementById("sound").pause();
+document.getElementById("sound").setAttribute('src', music);
+document.getElementById("sound").load();
+document.getElementById("sound").play();
+
+}
+
+
+    
+    
 </script>
 </html>
