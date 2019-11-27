@@ -53,14 +53,11 @@ getBtn.addEventListener("click", function () {
         getIcon.classList.remove('fa-play-circle');
         getIcon.classList.add('fa-pause-circle');
       
-      document.getElementById("sound").setAttribute('src', music);
-     music.load();
      music.play();
     } else {
         getIcon.classList.remove('fa-pause-circle');
         getIcon.classList.add('fa-play-circle');
-     document.getElementById("sound").setAttribute('src', music);
-     music.load();
+
      music.play();
     }
 });
