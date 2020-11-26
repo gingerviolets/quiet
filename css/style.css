@@ -3,6 +3,7 @@ body {
   margin: auto;
   text-align: center;
   background-color: #e5dfdf;
+  padding-bottom: 88px;
 }
 
 .header {
@@ -27,6 +28,13 @@ body {
   border-radius: 5px;
   opacity:0.8;
   filter: alpha(opacity=90);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 88px;
 }
 
 
