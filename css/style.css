@@ -6,6 +6,26 @@ body {
   padding-bottom: 50px;
 }
 
+a:link {
+  text-decoration: none;
+  color: #888888;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #888888;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #888888;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #888888;
+}
+
 .header {
   font-family: 'Sofia', cursive;
   font-size: 1.3em;
